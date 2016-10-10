@@ -30,9 +30,21 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+gem 'font-awesome-rails'
+gem 'active_admin_flat_skin'
+gem 'activeadmin_addons'
+
+gem 'font-awesome-rails'
+gem 'active_admin_flat_skin'
+gem 'activeadmin_addons'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry'
 end
 
 group :development do

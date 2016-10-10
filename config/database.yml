@@ -19,7 +19,10 @@ default: &default
 
 development:
   <<: *default
-  database: putong_development
+  database: <%= ENV['PUTONG_DB_NAME'] || 'putong_development' %>
+  username: <%= ENV['PUTONG_DB_USERNAME'] || 'root' %>
+  host: <%= ENV['PUTONG_DB_HOST'] || 'localhost' %>
+  password: <%= ENV['PUTONG_DB_PASSWORD'] || '' %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +52,7 @@ test:
 #
 production:
   <<: *default
-  database: putong_production
-  username: putong
-  password: <%= ENV['PUTONG_DATABASE_PASSWORD'] %>
+  username: <%= ENV['PUTONG_DB_USERNAME'] || 'root' %>
+  database: <%= ENV['PUTONG_DB_NAME'] || 'putong_development' %>
+  host: <%= ENV['PUTONG_DB_HOST'] || 'localhost' %>
+  password: <%= ENV['PUTONG_DB_PASSWORD'] || '' %>
