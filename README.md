@@ -5,25 +5,24 @@
 [![codecov](https://codecov.io/gh/watsy0007/putong/branch/master/graph/badge.svg)](https://codecov.io/gh/watsy0007/putong)
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## development
 
-Things you may want to cover:
+### step1
 
-* Ruby version
+install rvm
+install ruby 2.3.1
+install rails
 
-* System dependencies
+### step2
 
-* Configuration
+```
+bundle install
+rails db:create
+rails db:structure:load
+rails db:seed
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### step3
+```
+rails s -b 0.0.0.0
+```
