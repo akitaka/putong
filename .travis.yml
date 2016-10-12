@@ -3,4 +3,4 @@ sudo: required
 rvm:
   - 2.3.1
 script:
-  - rake test
+  - bundle exec rake test
