@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/watsy0007/putong.svg?branch=develop)](https://travis-ci.org/watsy0007/putong)
 
+[![codecov](https://codecov.io/gh/watsy0007/putong/branch/master/graph/badge.svg)](https://codecov.io/gh/watsy0007/putong)
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
